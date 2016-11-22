@@ -19,10 +19,10 @@ i = 0
 while i<10000:
     print "touchesBegan"
     GPIO.output(led, 1)
-    time.sleep(0.5)
+    time.sleep(0.3)
     print "touchesEnded"
     GPIO.output(led, 0)
-    time.sleep(0.5)
+    time.sleep(0.3)
     i += 1
 
 GPIO.cleanup()
